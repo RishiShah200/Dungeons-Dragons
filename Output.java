@@ -12,12 +12,14 @@ public class Output{
 		System.out.println("Sight: " + ok.getSight());
 		line();
 		System.out.println();
-		System.out.println("Strength: " + ok.getStrength() + "Modifier: " + );
+		System.out.println("Strength: " + ok.getStrength());
+	//	System.out.print("\tModifier: " + ok.AttributeArray());
 		System.out.println("Dexterity: " + ok.getDexterity());
 		System.out.println("Consitution: " + ok.getConstitution());
 		System.out.println("Intelligence: " + ok.getIntelligence());
 		System.out.println("Wisdom: " + ok.getWisdom());
 		System.out.println("Charisma: " + ok.getCharisma());
+		//System.out.println("Weapons List: " + ok.determineWeapon());
 	//}
 
 }
@@ -27,3 +29,5 @@ public class Output{
 		}
 
 }
+
+//ynot

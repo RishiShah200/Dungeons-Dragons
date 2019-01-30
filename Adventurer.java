@@ -43,7 +43,7 @@ public class Adventurer{
 		if(race.equals("Dragonborn")){
 			attributes[0]+=2;
 			attributes[5]+=1;
-		}
+		}//sure
 		if(race.equals("Gnome")){
 			attributes[3]+=2;
 		}
@@ -62,7 +62,7 @@ public class Adventurer{
 		}
 	//	this.sight = determineSight(modifiers);//FIX THIS
 		this.level = level;
-		this.modifier = AtrributeModifs(modifiers);
+		//this.modifier = AtrributeModifs(modifiers);
 		this.hp = determineHP(modifiers);
 		this.classtype = deterClass(attributes);
 		this.age = determineAge(name);
@@ -223,7 +223,7 @@ public class Adventurer{
 	            }
 	        }
     }
-    public void determineWeapon(){
+    public void determineWeapon(String name){
 		/*
 		longsword = [0]
 		mace = [1]
