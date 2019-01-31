@@ -189,7 +189,7 @@ public class Adventurer{
 			else if((arr[5]> arr[0]) && (arr[5]> arr[1]) && (arr[5]> arr[2]) && (arr[5]> arr[3]) && (arr[5]> arr[4]) && (arr[4]> arr[0]) && (arr[4]> arr[1]) && (arr[4]> arr[2]) && (arr[4] > arr[3])){
 				detClass = "Warlock";
 			}
-			else if((arr[3]> arr[0]) && (arr[3]> arr[1]) && (arr[3]> arr[2]) && (arr[3]> arr[4]) && (arr[3]> arr[5]) && (arr[4]> arr[0]) && (arr[4]> arr[1]) && (arr[4]> arr[2]) && (arr[4] > arr[5])){
+			else{
 				detClass = "Wizard";
 			}
 			return detClass;
@@ -199,31 +199,31 @@ public class Adventurer{
 				if(arr[i] == 1){
 					attributeMods[i] = -5;
 				}
-				if(arr[i] == 2 || arr[i] == 3){
+				else if(arr[i] == 2 || arr[i] == 3){
 					attributeMods[i] = -4;
 				}
-				if(arr[i] == 4 || arr[i] == 5){
+				else if(arr[i] == 4 || arr[i] == 5){
 					attributeMods[i] = -3;
 				}
-				if(arr[i] == 6 || arr[i] == 7){
+				else if(arr[i] == 6 || arr[i] == 7){
 					attributeMods[i] = -2;
 				}
-				if(arr[i] == 8 || arr[i] == 9){
+				else if(arr[i] == 8 || arr[i] == 9){
 					attributeMods[i] = -1;
 				}
-				if(arr[i] == 10 || arr[i] == 11){
+				else if(arr[i] == 10 || arr[i] == 11){
 					attributeMods[i] = 0;
 				}
-				if(arr[i] == 12 || arr[i] == 13){
+				else if(arr[i] == 12 || arr[i] == 13){
 					attributeMods[i] = 1;
 				}
-				if(arr[i] == 14 || arr[i] == 15){
+				else if(arr[i] == 14 || arr[i] == 15){
 					attributeMods[i] = 2;
 				}
-				if(arr[i] == 16 || arr[i] == 17){
+				else if(arr[i] == 16 || arr[i] == 17){
 					attributeMods[i] = 3;
 				}
-				if(arr[i] == 18 || arr[i] == 19){
+				else if(arr[i] == 18 || arr[i] == 19){
 					attributeMods[i] = 4;
 				}
 				else{

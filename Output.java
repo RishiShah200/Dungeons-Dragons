@@ -23,4 +23,8 @@ public class Output{
     public void makeALine(){
         System.out.println("-------------------------------------------------------------");
     }
+   /* public void determineASCII(){
+		if(ok.ClassType().equals("Barbarian"))
+			System.out.println("SURE");
+	}*/
 }
