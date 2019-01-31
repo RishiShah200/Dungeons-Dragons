@@ -110,6 +110,11 @@ public class Output{
 			System.out.println("   `==='____/");
 			System.out.println("Rapier");
 		}
+		if(classT.equals("Sorceror")){
+			System.out.println("\\\\\\\\\\\\       ________       ");
+			System.out.println(" >>>>>>---==(________)------");
+			System.out.println("//////");
+		}
 
 	}
 

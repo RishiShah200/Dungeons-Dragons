@@ -587,7 +587,7 @@ public class Adventurer{
 					}
 				}
 			}
-			else if(classType.equals("Sorcerer")){
+			else if(classType.equals("Sorceror")){
 				for(int i = 0; i < 2; i++) {
 					rand = randNumTwo(1, 4);
 					if (rand == 1) {
