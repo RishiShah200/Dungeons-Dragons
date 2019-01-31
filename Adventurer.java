@@ -150,13 +150,14 @@ public class Adventurer{
 
 		public String determineClass(int[] arr){
 			String detClass = "";
+			int rand = randNumTwo(1,12);
 			//0 - Strength
 			//1 - Dexterity
 			//2 - Constitution
 			//3 - Intelligence
 			//4 - Wisdom
 			//5 - Charisma
-			if((arr[0]> arr[1]) && (arr[0] > arr[2]) && (arr[0]> arr[3]) && (arr[0]> arr[4]) && (arr[0]> arr[5]) && (arr[2]> arr[1]) && (arr[2]> arr[3]) && (arr[2]> arr[4]) && (arr[2]> arr[5])){
+			if((arr[2]> arr[1]) && (arr[2]> arr[3]) && (arr[2]> arr[4]) && (arr[2]> arr[5])&&(arr[0]> arr[1]) && (arr[0] > arr[2]) && (arr[0]> arr[3]) && (arr[0]> arr[4]) && (arr[0]> arr[5]) ){
 				detClass = "Barbarian";
 			}
 			else if((arr[5]> arr[0]) && (arr[5]> arr[1]) && (arr[5]> arr[2]) && (arr[5]> arr[3]) && (arr[5]> arr[4]) && (arr[1]> arr[0]) && (arr[1]> arr[2]) && (arr[1]> arr[3]) && (arr[1] > arr[4])){
@@ -190,7 +191,32 @@ public class Adventurer{
 				detClass = "Warlock";
 			}
 			else{
-				detClass = "Wizard";
+				switch(rand){
+					case 1: detClass = "Barbarian";
+						break;
+					case 2: detClass = "Bard";
+						break;
+					case 3: detClass = "Cleric";
+						break;
+					case 4: detClass = "Druid";
+						break;
+					case 5: detClass = "Fighter";
+						break;
+					case 6: detClass = "Monk";
+						break;
+					case 7: detClass = "Paladin";
+						break;
+					case 8: detClass = "Ranger";
+						break;
+					case 9: detClass = "Rogue";
+						break;
+					case 10: detClass = "Sorceror";
+						break;
+					case 11: detClass = "Warlock";
+						break;
+					case 12: detClass = "Wizard";
+						break;
+				}
 			}
 			return detClass;
 		}
