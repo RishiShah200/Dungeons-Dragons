@@ -19,8 +19,10 @@ public class Adventurer{
     private String[] characterWeapons = new String[2];
     private int Speed;
     private int sight;
+
 		public Adventurer(String name){
 			this.name = name;
+
 			this.race = determineRace();
 			AttributeArray();
 			this.classType = determineClass(attribute);
@@ -39,6 +41,7 @@ public class Adventurer{
 			AttributeModifs(attribute);
 			pickWeapon();
 		}
+
 		public int randNumTwo(int a, int b){
 			int rand = (int)(Math.random()*b)+ a;
 			return rand;

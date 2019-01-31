@@ -1,6 +1,7 @@
 public class Output{
+	public String classT;
     public Output(Adventurer ok){
-
+		classT = ok.ClassType();
         System.out.println("Name: " + ok.getName());
         System.out.println("Race: " + ok.getRace());
         System.out.println("Age: " + ok.getAge());
@@ -19,9 +20,54 @@ public class Output{
         makeALine();
         System.out.println("Weapon List:");
         System.out.println("Weapon One: " + ok.getWeapons(0) + "\tWeapon Two: " + ok.getWeapons(1));
+        ASCII();
     }
     public void makeALine(){
         System.out.println("-------------------------------------------------------------");
     }
+    public void ASCII(){
+		if(classT.equals("Barbarian")){
+			System.out.println("          /)");
+			System.out.println("         //");
+			System.out.println(".-------| |--------------------------------------------.__");
+			System.out.println("|WMWMWMW| |>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>:>");
+			System.out.println("`-------| |--------------------------------------------'^^");
+			System.out.println("         \\\\");
+			System.out.println("          \\)");
+			System.out.println("Barbarian LongSword");
+		}
+		if(classT.equals("Bard")){
+			System.out.println(">>>>>>>_____________________\\`-._");
+			System.out.println(">>>>>>>                     //.-'");
+			System.out.println("Bard Crossbow");
+		}
+		if(classT.equals("Cleric")){
+			System.out.println("      //| ________________");
+			System.out.println("O|===|* >________________>");
+			System.out.println("      \\|");
+			System.out.println("Dagger");
+		}
+		if(classT.equals("Druid")){
+			System.out.println("\t\t<<()>>");
+			System.out.println("\t\t)__(");
+			System.out.println("\t\t)__(");
+			System.out.println("\t\t)__(");
+			System.out.println("\t\t)__(");
+			System.out.println("\t\t)__(");
+			System.out.println("\t\t)__(");
+			System.out.println("\t\t)__(");
+			System.out.println("\t\t)__(");
+			System.out.println("\t\t)__(");
+			System.out.println("\t\t)__(");
+			System.out.println("\t\t_)__(_");
+			System.out.println("\t\t.'      `.");
+			System.out.println("\t\t| <   >  |>");
+			System.out.println("\t\t<|   <   >|");
+			System.out.println("\t\t`.____.'");
+			System.out.println("\t\tV  V");
+			System.out.println("Druid Mace");
+		}
+	}
+
 
 }
