@@ -676,7 +676,7 @@ public class Adventurer{
 		public int getStrength(){
 			return strength;
 		}
-		public int getAge(){
+		public int getAge(){				//ADDED THINGS
 			return age;
 		}
 		public int getDexterity(){
