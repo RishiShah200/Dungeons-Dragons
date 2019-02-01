@@ -3,20 +3,27 @@ public class Output{
     public Output(Adventurer ok){
 		classT = ok.ClassType();
         System.out.println("Name: " + ok.getName());
-        System.out.println("Race: " + ok.getRace());
+        System.out.print("Race: " + ok.getRace()+"\t");
+        System.out.print("Race: " + ok.getRace()+"\t");
         System.out.println("Age: " + ok.getAge());
-        System.out.println("Class: " + ok.ClassType());
+        System.out.print("Class: " + ok.ClassType()+"\t\t");
         System.out.println("Level: " + ok.getLevel());
-        System.out.println("Speed: " + ok.getSpeed());
+        System.out.print("Speed: " + ok.getSpeed()+"\t\t");
         System.out.println("Sight: " + ok.getSight());
         System.out.println("Hit Points: " + ok.getHP());
         makeALine();
-        System.out.println("Strength: " + ok.getAttribute(0) + "\tModifier: " + ok.getAttributeMods(0));
-        System.out.println("Dexterity: " + ok.getAttribute(1) + "\tModifier: " + ok.getAttributeMods(1));
-        System.out.println("Constitution: " + ok.getAttribute(2) + "\tModifier: " + ok.getAttributeMods(2));
-        System.out.println("Intelligence: " + ok.getAttribute(3) + "\tModifier: " + ok.getAttributeMods(3));
-        System.out.println("Wisdom: " + ok.getAttribute(4) + "\tModifier: " + ok.getAttributeMods(4));
-        System.out.println("Charisma: " + ok.getAttribute(5) + "\tModifier: " + ok.getAttributeMods(5));
+        System.out.println("Strength: " + ok.getAttribute(0) + "\t\tModifier: " + ok.getAttributeMods(0));
+        System.out.println("Dexterity: " + ok.getAttribute(1) + "\t\tModifier: " + ok.getAttributeMods(1));
+        if(ok.getAttribute(2)>=10)
+			System.out.println("Constitution: " + ok.getAttribute(2) + "\tModifier: " + ok.getAttributeMods(2));
+        else
+			System.out.println("Constitution: " + ok.getAttribute(2) + "\t\tModifier: " + ok.getAttributeMods(2));
+		if(ok.getAttribute(3)>=10)
+        	System.out.println("Intelligence: " + ok.getAttribute(3) + "\tModifier: " + ok.getAttributeMods(3));
+        else
+        	System.out.println("Intelligence: " + ok.getAttribute(3) + "\t\tModifier: " + ok.getAttributeMods(3));
+        System.out.println("Wisdom: " + ok.getAttribute(4) + "\t\tModifier: " + ok.getAttributeMods(4));
+        System.out.println("Charisma: " + ok.getAttribute(5) + "\t\tModifier: " + ok.getAttributeMods(5));
         makeALine();
         System.out.println("Weapon List:");
         System.out.println("Weapon One: " + ok.getWeapons(0) + "\tWeapon Two: " + ok.getWeapons(1));
@@ -80,6 +87,7 @@ public class Output{
 		if(classT.equals("Monk")){
 			System.out.println(".______________________________________________________|_._._._._._._._._._.");
 			System.out.println(" \\_____________________________________________________|_#_#_#_#_#_#_#_#_#_|");
+			System.out.println("Monk Katana");
 		}
 		if(classT.equals("Paladin")){
 			System.out.println("          /)");
@@ -114,6 +122,33 @@ public class Output{
 			System.out.println("\\\\\\\\\\\\       ________       ");
 			System.out.println(" >>>>>>---==(________)------");
 			System.out.println("//////");
+			System.out.println("Sorceror Darts");
+		}
+		if(classT.equals("Warlock")){
+			System.out.println("\\\\\\\\\\\\       ________       ");
+			System.out.println(" >>>>>>---==(________)------");
+			System.out.println("//////");
+			System.out.println("Warlock Darts");
+		}
+		if(classT.equals("Wizard")){
+			System.out.println("                  .");
+			System.out.println();
+			System.out.println("                   .");
+			System.out.println("         /^\\     .");
+			System.out.println("    /\\   \"V\"");
+			System.out.println("   /__\\   I      O  o");
+			System.out.println("  //..\\   I     .");
+			System.out.println("  \\].`[/  I");
+			System.out.println("  /l\\/j\\  (]    .  O");
+			System.out.println(" /. ~~ ,\\/I          .");
+			System.out.println(" \\L__j^\\/ I       o");
+			System.out.println("  \\/--v}  I     o   .");
+			System.out.println("  |    |  I   _________");
+			System.out.println("  |    |  I c(`       ')o");
+			System.out.println("  |    l  I   \\.     ,/");
+			System.out.println("_/j  L l\\_!  _//^---^\\_  ");
+			System.out.println("Wizard Quarterstaff");
+
 		}
 
 	}
