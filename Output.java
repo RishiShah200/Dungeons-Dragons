@@ -3,8 +3,7 @@ public class Output{
     public Output(Adventurer ok){
 		classT = ok.ClassType();
         System.out.println("Name: " + ok.getName());
-        System.out.print("Race: " + ok.getRace()+"\t");
-        System.out.print("Race: " + ok.getRace()+"\t");
+        System.out.print("Race: " + ok.getRace()+"\t\t");
         System.out.println("Age: " + ok.getAge());
         System.out.print("Class: " + ok.ClassType()+"\t\t");
         System.out.println("Level: " + ok.getLevel());
@@ -30,7 +29,15 @@ public class Output{
         ASCII();
     }
     public void makeALine(){
-        System.out.println("-------------------------------------------------------------");
+		System.out.println();
+		System.out.println();
+        System.out.println("           /\\                                                 /\\");
+        System.out.println(" _         )( ______________________   ______________________ )(         _");
+        System.out.println("(_)///////(**)______________________> <______________________(**)\\\\\\\\\\\\\\(_)");
+        System.out.println("           )(                                                 )(");
+        System.out.println("          \\/                                                 \\/");
+        System.out.println();
+        System.out.println();
     }
     public void ASCII(){
 		if(classT.equals("Barbarian")){
@@ -150,6 +157,7 @@ public class Output{
 			System.out.println("Wizard Quarterstaff");
 
 		}
+
 
 	}
 
