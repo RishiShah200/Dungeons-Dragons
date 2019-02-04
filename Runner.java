@@ -4,13 +4,16 @@ import java.io.InputStream;
 import javax.swing.JOptionPane;
 import sun.audio.AudioPlayer;
 import sun.audio.AudioStream;
+import java.util.ArrayList;
 public class Runner{
 
     public Runner(){
         String name = "Mr.Joe";
         Adventurer ok = new Adventurer(name);
         Output output = new Output(ok);
-//CHANGES HAVE BEEN MADE WOHOO
+        ArrayList<Adventurer> characters = new ArrayList<Adventurer>(10);
+        characters.add(ok);
+        //CHANGES HAVE BEEN MADE
 
     }
 
