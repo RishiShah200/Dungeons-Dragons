@@ -11,19 +11,26 @@ import java.util.ArrayList;
 public class Runner {
 
     public Runner() {
-        String name = "Mr.Joe";
-        Adventurer ok = new Adventurer(name);
-        Output output = new Output(ok);
-        ArrayList<Adventurer> characters = new ArrayList<>(10);        //This code needs to be fixed, does not properly output the Output.java file
-        characters.add((Adventurer) ok);
-
-        //CHANGES HAVE BEEN MADE
-
+        ArrayList<Adventurer> characters = new ArrayList<Adventurer>();
+        for (int x = 0; x < 10; x++) {
+            characters.add(new Adventurer(determineName()));
+        }
+        for (int x = 0; x < 10; x++) {
+            System.out.println("\n\nAdventurer #" + x);
+            Output output = new Output(characters.get(x));
+        }
     }
 
     public static void main(String[] args) {
         playMusic("music.wav");
         Runner app = new Runner();
+    }
+
+    public String determineName() {
+        String[] name = {"Rishi", "Rachit", "Zareeb", "Anish", "Prabhav", "PewdiePie", "Mr.Beast", "Ninja", "Mario", "Luigi"};
+        int rand = (int) (Math.random() * 10);
+        Adventurer actor = new Adventurer(name[rand]);
+        return name[rand];
     }
 
     public static void playMusic(String filepath) {
