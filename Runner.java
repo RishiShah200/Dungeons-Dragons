@@ -10,9 +10,10 @@ public class Runner{
     public Runner(){
         String name = "Mr.Joe";
         Adventurer ok = new Adventurer(name);
-        Output output = new Output(ok);
-        ArrayList<Adventurer> characters = new ArrayList<Adventurer>(10);
-        characters.add(ok);
+       // Output output = new Output(ok);
+        ArrayList<Adventurer> characters = new ArrayList<>(10);		//This code needs to be fixed, does not properly output the Output.java file
+        characters.add((Adventurer)ok);
+
         //CHANGES HAVE BEEN MADE
 
     }
